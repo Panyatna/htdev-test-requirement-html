@@ -1,4 +1,4 @@
-Необходимо сверстать приложенный PSD макет. [Ссылка на макет](https://www.figma.com/file/tcp2JqjbxM31KdsEeW37w0/htdev-test?node-id=0%3A1)
+Необходимо сверстать приложенный макет. [Ссылка на макет](https://www.figma.com/file/tcp2JqjbxM31KdsEeW37w0/htdev-test?node-id=0%3A1)
 
 # Требования к верстке:
 
