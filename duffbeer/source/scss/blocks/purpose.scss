@@ -1,0 +1,218 @@
+.purpose {
+  margin-bottom: 50px;
+
+  @media (min-width: $s-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $m-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $l-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.purpose__declaration-container {
+  background-color: $smalt-color;
+  color: $white-color;
+  padding: 33px 20px 31px 43px;
+
+  @media (min-width: $s-width) {
+    padding-left: 69px;
+  }
+
+  @media (min-width: $m-width) {
+    padding: 95px 130px 94px 125px;
+  }
+
+  @media (min-width: $l-width) {
+    padding: 95px 270px 94px 145px;
+  }
+}
+
+.purpose__declaration {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+
+  @media (min-width: $m-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../../img/icons/quotation-mark-mobile.svg");
+    width: 22px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: -29px;
+
+    @media (min-width: $s-width) {
+      top: 5px;
+      left: -49px;
+    }
+
+    @media (min-width: $m-width) {
+      background-image: url("../../img/icons/quotation-mark-tablet.svg");
+      width: 47px;
+      height: 60px;
+      top: 1px;
+      left: -85px;
+    }
+  }
+}
+
+.purpose__declaration-transfer {
+  &--mobile {
+    @media (min-width: $m-width) {
+      display: none;
+    }
+  }
+}
+
+.purpose__image-container {
+  color: $white-color;
+  text-align: center;
+  position: relative;
+  background-image: url("../../img/purpose.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.purpose__container {
+  background-color: $stonewall-opacity67-color;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.purpose__wrapper {
+  padding: 28px 14px 60px;
+  position: relative;
+
+  @media (min-width: $s-width) {
+    padding: 57px 91px 55px;
+  }
+
+  @media (min-width: $m-width) {
+    padding: 103px 91px 101px;
+  }
+
+  @media (min-width: $l-width) {
+    padding: 99px 91px 101px;
+  }
+}
+
+.purpose__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 46px;
+  font-weight: 400;
+  margin: 0 auto 4px;
+  position: relative;
+  width: 262px;
+
+  &::before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $white-color;
+    position: absolute;
+    top: 21px;
+    left: 12px;
+    width: 15px;
+
+    @media (min-width: $m-width) {
+      border-bottom: 4px solid $white-color;
+      width: 66px;
+      top: 18px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $white-color;
+    position: absolute;
+    top: 21px;
+    right: 12px;
+    width: 15px;
+
+    @media (min-width: $m-width) {
+      border-bottom: 4px solid $white-color;
+      width: 66px;
+      top: 18px;
+    }
+  }
+
+  @media (min-width: $s-width) {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 372px;
+  }
+
+  @media (min-width: $m-width) {
+    font-size: 48px;
+    margin-bottom: 46px;
+    width: 666px;
+  }
+
+  @media (min-width: $l-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.purpose__description {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 29px;
+
+  @media (min-width: $s-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $m-width) {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $l-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.purpose__description-transfer {
+  &--mobile {
+    @media (min-width: $l-width) {
+      display: none;
+    }
+  }
+}
+
+.purpose__link {
+  color: $smalt-color;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px 30px;
+  border: none;
+  text-decoration: none;
+  background-color: $white-color;
+  display: inline-block;
+
+  @media (min-width: $s-width) {
+    font-size: 14px;    
+    padding: 10px 32px;
+  }
+
+  @media (min-width: $m-width) {
+    font-size: 18px;    
+    padding: 20px 72px;
+  }
+}

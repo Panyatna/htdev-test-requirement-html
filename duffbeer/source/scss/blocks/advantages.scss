@@ -1,0 +1,283 @@
+.advantages {
+  padding: 0 16px 0 14px;
+  position: relative;
+  margin-bottom: 26px;
+
+  @media (min-width: $s-width) {
+    padding: 0 45px 0 20px;
+  }
+
+  @media (min-width: $m-width) {
+    padding: 0 40px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $l-width) {
+    padding: 0 60px;
+    margin-bottom: 95px;
+  }
+}
+
+.advantages__title {
+  font-size: 20px;
+  line-height: 32px;
+  color: $smalt-color;
+  font-weight: $weight-regular;
+  margin: 0 0 20px;
+
+  @media (min-width: $m-width) {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $l-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.advantages-swiper {
+  overflow: hidden;
+
+  @media (min-width: $m-width) {
+    display: none;
+  }
+}
+
+.advantages__img {
+  height: 178px;
+  background-size: cover;
+  background-position: center;
+  background-color: $smalt-color;
+
+  @media (min-width: $l-width) {
+    width: 356px;
+  }
+  
+  &--mother-and-child {
+    background-image: url("../../img/advantages-swiper/tablet/mother-and-child.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/mother-and-child.jpg");
+    }
+  }
+
+  &--man-in-workshop-with-documentation {
+    background-image: url("../../img/advantages-swiper/tablet/man-in-workshop-with-documentation.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/man-in-workshop-with-documentation.jpg");
+    }
+  }
+
+  &--man-looking-into-distance {
+    background-image: url("../../img/advantages-swiper/tablet/man-looking-into-distance.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/man-looking-into-distance.jpg");
+    }
+  }
+
+  &--medical-center {
+    background-image: url("../../img/advantages-swiper/tablet/medical-center.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/medical-center.jpg");
+    }
+  }
+
+  &--worker-at-work {
+    background-image: url("../../img/advantages-swiper/tablet/worker-at-work.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/worker-at-work.jpg");
+    }
+  }
+
+  &--training {
+    background-image: url("../../img/advantages-swiper/tablet/training.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/training.jpg");
+    }
+  }
+
+  &--people-by-lake {
+    background-image: url("../../img/advantages-swiper/tablet/people-by-lake.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/people-by-lake.jpg");
+    }
+  }
+
+  &--family-event {
+    background-image: url("../../img/advantages-swiper/tablet/family-event.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/family-event.jpg");
+    }
+  }
+
+  &--man-with-grass {
+    background-image: url("../../img/advantages-swiper/tablet/man-with-grass.jpg");
+
+    @media (min-width: $l-width) {
+      background-image: url("../../img/advantages-swiper/desktop/man-with-grass.jpg");
+    }
+  }  
+}
+
+.advantages-slide__title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: $weight-regular;
+  color: $white-color;
+  margin: 0;
+
+  @media (min-width: $m-width) {
+    width: 220px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $l-width) {
+    width: 316px;
+  }
+}
+
+.advantages-slide__title-transfer {
+  &--mobile {
+    @media (min-width: $l-width) {
+      display: none;
+    }
+  }
+}
+
+.advantages__container {
+  padding: 20px 20px 26px;
+  background-color: $smalt-color;
+  display: grid;
+  flex-direction: column;
+  min-height: 60px;
+
+  @media (min-width: $m-width) {
+    padding-bottom: 29px;
+    min-height: 165px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $l-width) {
+    min-height: 139px;
+    padding-bottom: 32px;    
+  }
+}
+
+.advantages-accordion__button {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  justify-self: end;
+  align-self: end;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  position: relative;
+
+  &--opened {
+    &::before {
+      content: "";
+      display: block;
+      border-bottom: 1px solid $white-color;
+      width: 16px;
+    }
+  }
+
+  &--closed {
+    &::before {
+      content: "";
+      display: block;
+      border-bottom: 1px solid $white-color;
+      width: 16px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      border-right: 1px solid $white-color;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      right: 7px;
+    }
+  }
+}
+
+.advantages-swiper-pagination {
+  text-align: center;
+  margin-top: -16px;
+
+  @media (min-width: $s-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $m-width) {
+    display: none;
+  }
+}
+
+.advantages-swiper-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  padding: 0;
+  cursor: pointer;
+
+  @media (min-width: $m-width) {
+    display: none;
+  }
+}
+
+.advantages-swiper-button__next {
+  top: 186px;
+  right: 2px;
+}
+
+.advantages-swiper-button__prev {
+  top: 186px;
+  left: 0;
+}
+
+.advantages__list {
+  display: none;
+  
+  @media (min-width: $m-width) {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 21px 35px;
+  }
+
+  @media (min-width: $l-width) {
+    gap: 32px 31px;
+  }
+}
+
+.advantages__answer-container--none {
+  display: none;
+}
+
+.advantages__answer-container--block {
+  display: block;
+}
+
+.advantages__answer-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: $white-color;
+  margin: 0;
+
+  @media (min-width: $m-width) {
+    font-size: 18px;
+  }
+}

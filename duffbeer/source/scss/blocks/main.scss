@@ -1,0 +1,11 @@
+.main__wrapper {
+  background-color: $linen-color;
+
+  @media (min-width: $m-width) {
+    padding-top: 18px;
+  }
+
+  @media (min-width: $l-width) {
+    padding-top: 0;
+  }
+}

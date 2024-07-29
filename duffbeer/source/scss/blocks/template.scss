@@ -1,0 +1,18 @@
+.template {
+  margin: 15px 7px;
+  font-family: $primary-font;
+  font-weight: $weight-regular;
+
+  @media (min-width: $s-width) {
+    margin: 15px auto;
+    width: 610px;
+  }
+
+  @media (min-width: $m-width) {
+    width: 930px;
+  }
+
+  @media (min-width: $l-width) {
+    width: 1250px;
+  }
+}

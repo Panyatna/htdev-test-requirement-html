@@ -1,0 +1,125 @@
+.intro {
+  text-align: center;
+  background-color: $stonewall-opacity67-color;
+  min-width: 290px;
+  min-height: 352px;
+  position: relative;
+  color: $white-color;
+  margin-bottom: 50px;
+
+  @media (min-width: $s-width) {
+    min-width: 610px;
+    min-height: 314px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $m-width) {
+    text-align: left;
+    min-width: 930px;
+    min-height: 599px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $l-width) {
+    min-width: 1250px;
+    margin-bottom: 100px;
+  }
+}
+
+.intro__container {
+  margin-bottom: 50px;
+
+  @media (min-width: $s-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $m-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $l-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.intro__image-container {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/intro.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(-1, 1);
+
+  @media (min-width: $l-width) {
+    background-position: 0 -59px;
+  }
+}
+
+.intro__logo {
+  &--mobile {
+    @media (min-width: $m-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $m-width) {      
+      display: block;
+      margin-left: 60px;
+    }
+  }
+}
+
+.intro__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: $weight-regular;
+  margin: 50px 0 0;
+
+  @media (min-width: $s-width) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $m-width) {
+    font-size: 72px;
+    line-height: 80px;
+    margin-top: 135px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $l-width) {
+    margin-top: 116px;
+    margin-left: 60px;
+  }
+}
+
+.intro__description {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: $weight-regular;
+  margin: 21px 0 0;
+
+  @media (min-width: $s-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 320px;
+    margin: 21px auto;
+  }
+
+  @media (min-width: $m-width) {
+    font-size: 26px;
+    line-height: 36px;
+    width: 550px;
+    margin: 28px 0 0 40px;
+  }
+
+  @media (min-width: $l-width) {
+    margin: 15px 0 0 60px;
+  }
+}
