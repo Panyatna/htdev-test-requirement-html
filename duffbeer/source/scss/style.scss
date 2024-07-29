@@ -1,0 +1,15 @@
+// Global
+@import "global/variables.scss";
+
+// Vendor
+@import "../../node_modules/swiper/swiper-bundle";
+
+// Blocks
+@import "blocks/template.scss";
+@import "blocks/main.scss";
+@import "blocks/intro.scss";
+@import "blocks/about.scss";
+@import "blocks/purpose.scss";
+@import "blocks/swiper.scss";
+@import "blocks/advantages.scss";
+@import "blocks/benefits.scss";
